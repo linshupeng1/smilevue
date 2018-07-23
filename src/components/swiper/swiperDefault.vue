@@ -2,7 +2,6 @@
   <div>
     <swiper class="swiper" :options="swiperOption">
       <swiper-slide class="swiper-slide" v-for="(item,index) in slide" :key="index">
-        <!--Slide{{item}}-->
         <div class="recommend-item">
           <img :src="item.image" width="80%" alt="">
           <div>{{item.goodsName}}</div>
@@ -10,9 +9,6 @@
         </div>
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
-      <!--<swiper-slide class="text">-->
-      <!--一大堆文章.........-->
-      <!--</swiper-slide>-->
     </swiper>
   </div>
 </template>
