@@ -62,13 +62,11 @@
   }
   .floor-anomaly div{
     width:10rem;
-
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
   }
   .floor-one{
     border-right:1px solid #ddd;
-
   }
   .floor-two{
     border-bottom:1px solid #ddd;
@@ -79,7 +77,6 @@
     flex-direction: row;
     flex-wrap:wrap;
     background-color: #fff;
-
   }
   .floor-rule div{
     -webkit-box-sizing: border-box;

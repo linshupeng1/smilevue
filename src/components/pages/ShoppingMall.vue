@@ -46,7 +46,7 @@
       <div class="hot-title">热卖商品</div>
       <div class="hot-goods">
         <van-list>
-          <van-row gutter="20">
+          <van-row>
             <van-col span="12" v-for="(item,index) in hotGoods" :key="index">
               <goods-info :goodsImage="item.image" :goodsName="item.name" :goodsPrice="item.price"></goods-info>
             </van-col>
@@ -63,6 +63,7 @@
   import {toMoney} from '@/filter/moneyFilter.js'
   import goodsInfo from '../component/goodsInfoComponent'
   import swiperDefault from '../swiper/swiperDefault'
+  import url from '@/serviceAPI.config.js'
   export default {
     name: "shopping-mall",
     components: {
@@ -97,7 +98,7 @@
     },
     created(){
       axios({
-        url: 'https://www.easy-mock.com/mock/5b5587457186cb2cce7efe8e/mock',
+        url: url.getShoppingMallInfo,
         method: 'get',
       }).then(res=>{
         console.log(res.data.data);
